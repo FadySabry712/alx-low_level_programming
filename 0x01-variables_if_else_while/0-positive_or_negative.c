@@ -6,9 +6,10 @@
 
 /* betty style doc for function main goes there */
 
-/*
- * main - tells if the number is postive. negative or else
- * Rreturn: the expected end of the condtion
+/**
+ * main - Entry point
+ * Description: 'tells if the number is +, - or else'
+ * Return: Always 0
  */
 
 int main(void)
@@ -23,7 +24,7 @@ int main(void)
 	else if (n == 0)
 		printf("%d is zero\n", n);
 	else
-		printf("%d is postive\n", n);
+		printf("%d is positive\n", n);
 	return (0);
 }
 
