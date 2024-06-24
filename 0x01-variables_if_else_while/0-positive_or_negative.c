@@ -1,10 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /* more headers goes there */
 
+
 /* betty style doc for function main goes there */
+
+/*
+ * main - tells if the number is postive. negative or else
+ * Rreturn: the expected end of the condtion
+ */
+
 int main(void)
 {
 	int n;
@@ -16,7 +22,7 @@ int main(void)
 		printf("%d is negative\n", n);
 	else if (n == 0)
 		printf("%d is zero\n", n);
-	else 
+	else
 		printf("%d is postive\n", n);
 	return (0);
 }
