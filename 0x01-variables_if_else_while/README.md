@@ -1,1 +1,1 @@
-this file contains a fw tasks to learn c
+thos file contain 10 tasks to learn c
