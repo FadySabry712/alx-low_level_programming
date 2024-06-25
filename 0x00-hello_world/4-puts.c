@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entery point
- * Returns: (0) success
+ * Return: 0 (Success)
  */
 int main(void)
 {
