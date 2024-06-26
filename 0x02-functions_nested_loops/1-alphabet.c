@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
-* main -entery point
-* Return: 0 (Success)
+* print_alphabet - Print the alphabet
+*
+* Return:void
 */
 
-int main(void)
+void print_alphabet(void)
 {
 char ch;
 
@@ -17,5 +18,4 @@ _putchar(ch);
 ch++;
 }
 _putchar('\n');
-return (0);
 }
