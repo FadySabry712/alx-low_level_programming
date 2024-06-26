@@ -12,17 +12,14 @@ char ch;
 
 int i;
 
-ch = 'a';
-i = 0;
-
-while (i < 10)
+fot ( i = 0; i < 10; i++)
 {
-
-for (ch = 'a'; ch  <= 'z'; ch++)
+ch = 'a';
+while ( ch <= 'z')
 {
 _putchar(ch);
-}
+ch++;
 }
 _putchar('\n');
-i++;
+}
 }
