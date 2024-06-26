@@ -12,10 +12,10 @@ char ch;
 
 int i;
 
-fot ( i = 0; i < 10; i++)
+for (i = 0; i < 10; i++)
 {
 ch = 'a';
-while ( ch <= 'z')
+while (ch <= 'z')
 {
 _putchar(ch);
 ch++;
