@@ -15,15 +15,14 @@ int i;
 ch = 'a';
 i = 0;
 
-for (i = 0; i < 10; i++)
+while (i < 10)
 {
 
-while (ch <= 'z')
+for (ch = 'a'; ch  <= 'z'; ch++)
 {
 _putchar(ch);
-ch++;
 }
 }
 _putchar('\n');
-
+i++;
 }
