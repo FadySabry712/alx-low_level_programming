@@ -30,8 +30,9 @@ printf("%d", no);
 if (no == 100)
 {
 	continue;
+}
 	printf(" ");
-	}
+	
 }
 printf("\n");
 return (0);
