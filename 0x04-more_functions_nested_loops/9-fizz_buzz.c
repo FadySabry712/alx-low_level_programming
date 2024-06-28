@@ -24,14 +24,14 @@ else if ((no % 5) == 0)
 	printf("Buzz");
 }
 else
-{
+
 printf("%d", no);
-}
+
 if (no == 100)
 {
 	continue;
 	printf(" ");
-}
+	}
 }
 printf("\n");
 return (0);
