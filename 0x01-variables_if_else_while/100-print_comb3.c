@@ -13,7 +13,7 @@ for (ten = '0'; ten <= '9'; ten++)
 {
 for (one = '0'; one <= '9'; one++)
 {
-if (!(one == ten) || (ten > one))
+if (!((one == ten) || (ten > one)))
 {
 putchar(ten);
 putchar(one);
