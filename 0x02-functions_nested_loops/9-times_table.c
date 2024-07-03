@@ -22,14 +22,13 @@ _putchar(48);
 	prod = number * multiply;
 
 	if (prod <= 9)
-	{
+
 		_putchar(' ');
-	}else
-	{
+	else
 	_putchar((prod / 10) + 48);
+
+_putchar((prod % 10) + 48);
 	}
-	_putchar((prod % 10) + 48);
-	}
-}
 _putchar('\n');
+}
 }
