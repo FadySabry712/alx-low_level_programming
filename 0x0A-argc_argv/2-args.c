@@ -3,7 +3,7 @@
 /**
  * main - entery point
  * @argc: param 1 int
- * @@argv: param 2 list
+ * @argv: param 2 list
  * Return: 0 Sucess
  */
 
