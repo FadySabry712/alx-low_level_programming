@@ -27,10 +27,10 @@ int _strlen(char *s)
 }
 
 /**
- * big_multiply - multiply two big number 
+ * big_multiply - multiply two big number
  * @s1: param 1
  * @s2:param 2
- * Return: product big number 
+ * Return: product big number
  */
 char *big_multiply(char *s1, char *s2)
 {
@@ -57,14 +57,14 @@ char *big_multiply(char *s1, char *s2)
 
 		for (l_2 = _strlen(s2) - 1; l_2 >= 0; l_2--)
 		{
-			if (!_isdigit(s2[l2]))
+			if (!_isdigit(s2[l_2]))
 			{
 				free(rtr);
 				printf("Error\n"), exit(98);
 			}
 			l = s2[l_2] - '0';
 
-			m += rtr[l_1 + l2_ + 1] + (k * l);
+			m += rtr[l_1 + l_2 + 1] + (k * l);
 			rtr[l_1 + l_2 + 1] = m % 10;
 
 			m /= 10;
@@ -77,7 +77,7 @@ char *big_multiply(char *s1, char *s2)
 
 
 /**
- * main - multiply two big number 
+ * main - multiply two big number
  * @argc: [aram 1
  * @argv: param 2
  *
