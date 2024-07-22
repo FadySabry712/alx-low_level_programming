@@ -2,10 +2,10 @@
 
 /**
  * main - entery point
- * REturn: 0 Success
+ * Return: 0 Success
  */
 
-int mmain(void)
+int main(void)
 {
 printf("%s\n", __FILE__);
 return (0);
