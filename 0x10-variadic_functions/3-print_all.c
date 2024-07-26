@@ -1,87 +1,50 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 /**
- * format_char - entery
- * @separator: param 1
- * @ap: param 2
- */
-
-void format_char(char *separator, va_list ap)
-{
-	printf("%s%c", separator, va_arg(ap, int));
-}
-
-/**
- * format_int - entery point
- * @separator: param 1
- * @ap: param 2
- */
-
-void format_int(char *separator, va_list ap)
-{
-printf("%s%d", separator, va_arg(ap, int));
-}
-
-/**
- * format_float - entery
- * @separator: param 1
- * @ap: param 2
- */
-
-void format_float(char *separator, va_list ap)
-{
-printf("%s%f", separator, va_arg(ap, double));
-}
-
-/**
- * format_string - entery
- * @separator: param 1
- * @ap: param 2
- */
-
-void format_string(char *separator, va_list ap)
-{
-char *s = va_arg(ap, char *);
-	switch ((int)(!s))
-	case 1:
-		s = " (nil)";
-	printf("%s%s", separator, s);
-}
-
-/**
- *print_all  - entery
+ * print_all - entery point
  * @format: param 1
  */
-
 void print_all(const char * const format, ...)
 {
-int a = 0, m;
-char *separator = "";
-va_list ap;
-token_t tokens[] = {
-	{"c", format_char},
-	{"i", format_int},
-	{"f", format_float},
-	{"s", format_string},
+	int j = 0;
+	char *s, *separator = "";
 
-	{NULL, NULL}
-};
+	va_list list;
 
-va_start(ap, format);
-while (format && format[a])
-{
-	m = 0;
-	while (tokens[a].token)
+	va_start(list, format);
+
+	if (format)
 	{
-		if (format[a] == tokens[m].token[0])
+		while (format[j])
 		{
-		tokens[m].f(separator, ap);
-		separator = ", ";
+			switch (format[j])
+			{
+				case 'c':
+					printf("%s%c", separator, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", separator, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", separator, va_arg(list, double));
+					break;
+				case 's':
+					s = va_arg(list, char *);
+					if (!s)
+						s = "(nil)";
+					printf("%s%s", separator, s);
+					break;
+				default:
+					j++;
+					continue;
+			}
+			separator = ", ";
+			j++;
 		}
-		m++;
-}
-a++;
-}
+	}
+
 	printf("\n");
-	va_end(ap);
+	va_end(list);
 }
