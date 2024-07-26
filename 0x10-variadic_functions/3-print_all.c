@@ -60,7 +60,7 @@ char *separator = "";
 va_list ap;
 token_t tokens[] = {
 	{"c", format_char},
-	{"a", format_int},
+	{"i", format_int},
 	{"f", format_float},
 	{"s", format_string},
 
