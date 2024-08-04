@@ -3,10 +3,10 @@
 #include "string.h"
 
 /*
- * add_node - entery point
- * @head: param 1 'ptr to list_t list'
- * @str: param 2 'array of strings to be added'
- * Return: preappended list value
+ * add_node - preappend a node to the start
+ * @head: ptr to list_t list
+ * @str: array of strings or nums to be added
+ * Return: preappended list values
  */
 
 list_t *add_node(list_t **head, const char *str)
