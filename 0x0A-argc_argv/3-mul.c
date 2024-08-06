@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints two sms og numbs
+ * main - prints two sums of  numbs
  * @argc: param 1
  * @argv: crab 2
  * Return: 0 *successs>
